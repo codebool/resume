@@ -1,0 +1,333 @@
+.index, .resume, .courses {
+    font-family: Arial, sans-serif; /* Sets the font family for these classes */
+    background-color: darkolivegreen; /* Dark green background color */
+    color: wheat; /* Sets the text color to wheat */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+.index header, .resume header, .courses header {
+    background-color: #000; /* Black background color for header */
+    padding: 10px 0; /* Adds vertical padding to the header */
+}
+
+.index nav ul, .resume nav ul, .courses nav ul {
+    list-style: none; /* Removes bullet points from list */
+    padding: 0; /* Removes default padding from list */
+    text-align: center; /* Centers the text inside the list */
+}
+
+.index nav ul li, .resume nav ul li, .courses nav ul li {
+    display: inline; /* Displays list items inline */
+    margin: 5px 25px; /* Adds horizontal margin to list items */
+}
+
+.active-nav {
+    background-color: #333; /* Dark gray background color for active link */
+    border-radius: 5px; /* Rounds the corners of active link */
+}
+
+.index nav ul li a, .resume nav ul li a, .courses nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Sets link color to white */
+    font-weight: bold; /* Makes the text bold */
+}
+
+.links {
+    color: purple;
+}
+
+.index .profile {
+    text-align: center; /* Centers the text */
+    padding: 20px; /* Adds padding around the profile section */
+}
+
+.index .profile-picture {
+    border-radius: 50%; /* Makes the profile picture circular */
+    width: 160px; /* Sets the width of the profile picture */
+    height: 210px; /* Sets the height of the profile picture */
+}
+
+.index .about, .details {
+    padding: 20px; /* Adds padding around these sections */
+    text-align: center; /* Centers the text */
+}
+
+.index .no-bullets {
+    list-style-type: none; /* Removes bullet points from list */
+    padding: 0; /* Removes default padding from list */
+}
+
+.index .button {
+    background-color: purple; /* DodgerBlue background color */
+    color: white; /* Sets the text color to white */
+    border: none; /* Removes default border */
+    padding: 10px 20px; /* Adds padding inside the button */
+    border-radius: 5px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.index .button:hover {
+    background-color: #104E8B; /* Changes background color on hover */
+}
+
+.index .button {
+    color: white; /* Sets the text color to white */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.index .details {
+    display: flex; /* Uses flexbox layout for the details section */
+    justify-content: space-around; /* Distributes space evenly around items */
+    padding: 20px 0; /* Adds vertical padding */
+}
+
+.index .details div {
+    flex: 1; /* Makes the divs flexible */
+    margin: 0 10px; /* Adds horizontal margin to divs */
+}
+
+.index .details h3 {
+    border-bottom: 2px solid white; /* Adds a bottom border to the heading */
+    display: inline-block; /* Displays the heading inline-block */
+    padding-bottom: 5px; /* Adds bottom padding to the heading */
+}
+
+.index .social-icons a {
+    color: #000; /* Sets the icon color to black */
+    margin-right: 10px; /* Adds right margin to icons */
+}
+
+.index .social-icons i {
+    font-size: 24px; /* Sets the font size of icons */
+}
+
+.resume main {
+    padding: 20px; /* Adds padding around the main content */
+}
+
+.resume section {
+    margin-bottom: 20px; /* Adds bottom margin to sections */
+    opacity: 0; /* Makes sections invisible initially */
+    transform: translateY(20px); /* Moves sections down by 20px */
+    animation: fadeInUp 0.6s ease-out forwards; /* Applies fadeInUp animation */
+}
+
+.resume section:nth-child(1) {
+    animation-delay: 0.2s; /* Delays animation start */
+}
+
+.resume section:nth-child(2) {
+    animation-delay: 0.4s; /* Delays animation start */
+}
+
+.resume section:nth-child(3) {
+    animation-delay: 0.6s; /* Delays animation start */
+}
+
+.resume section:nth-child(4) {
+    animation-delay: 0.8s; /* Delays animation start */
+}
+
+.resume section:nth-child(5) {
+    animation-delay: 1.2s; /* Delays animation start */
+}
+
+.resume section:nth-child(6) {
+    animation-delay: 1.4s; /* Delays animation start */
+}
+
+.resume section:nth-child(7) {
+    animation-delay: 1.8s; /* Delays animation start */
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* Sets final opacity to fully visible */
+        transform: translateY(0); /* Moves sections back to original position */
+    }
+}
+
+.resume h2 {
+    border-bottom: 2px solid white; /* Adds a bottom border to headings */
+    padding-bottom: 5px; /* Adds bottom padding to headings */
+    margin-bottom: 10px; /* Adds bottom margin to headings */
+}
+
+.resume ul {
+    list-style-type: none; /* Removes bullet points from list */
+    padding: 0; /* Removes default padding from list */
+}
+
+.resume ul li {
+    margin-bottom: 10px; /* Adds bottom margin to list items */
+}
+
+.resume ul li ul {
+    list-style-type: disc; /* Uses disc bullets for nested lists */
+    margin-left: 20px; /* Adds left margin to nested lists */
+}
+
+.resume ul li ul li {
+    margin-bottom: 5px; /* Adds bottom margin to nested list items */
+}
+
+.resume .labs {
+    display: flex; /* Uses flexbox layout for labs section */
+    justify-content: flex-start; /* Aligns items to the start */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    margin-top: 20px; /* Adds top margin to labs section */
+}
+
+.resume .lab-item {
+    width: 20%; /* Sets the width of lab items */
+    border: 1px solid #ccc; /* Adds a border around lab items */
+    border-radius: 5px; /* Rounds the corners of lab items */
+    margin-bottom: 20px; /* Adds bottom margin to lab items */
+    margin-right: 20px; /* Adds right margin to lab items */
+    transition: transform 0.3s ease; /* Adds a transition effect */
+}
+
+.resume .lab-item a {
+    display: block; /* Displays the link as a block */
+    color: lightsalmon; /* Sets the link color to lightsalmon */
+}
+
+.resume .lab-item a:hover {
+    color: tomato; /* Changes link color on hover */
+}
+
+.resume .lab-item img {
+    width: 100%; /* Sets the image width to 100% */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.resume .lab-item p {
+    padding: 10px; /* Adds padding inside the paragraph */
+}
+
+.resume .lab-item:hover {
+    transform: scale(1.05); /* Scales up the item on hover */
+}
+
+@media (max-width: 1200px) {
+    .resume .lab-item {
+        width: 30%; /* Changes the width of lab items */
+    }
+}
+
+@media (max-width: 992px) {
+    .resume .lab-item {
+        width: 45%; /* Changes the width of lab items */
+    }
+}
+
+@media (max-width: 768px) {
+    .resume .lab-item {
+        width: 100%; /* Changes the width of lab items */
+    }
+}
+
+.courses main {
+    padding: 20px; /* Adds padding around the main content */
+}
+
+.courses #search-form {
+    margin-bottom: 20px; /* Adds bottom margin to the search form */
+}
+
+.courses #search-input {
+    padding: 5px; /* Adds padding inside the search input */
+    border: 2px solid silver; /* Adds a border around the search input */
+    width: auto; /* Sets the width of the search input */
+}
+
+.courses #filter-level, #sort-asc, #sort-desc {
+    padding: 10px; /* Adds padding inside the buttons */
+    border: none; /* Removes default border */
+    background-color: #1E90FF; /* DodgerBlue background color */
+    color: white; /* Sets the text color to white */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.courses #filter-level:hover, #sort-asc:hover, #sort-desc:hover {
+    background-color: #104E8B; /* Changes background color on hover */
+}
+
+.active-sort {
+    background-color: #4CAF50 !important; /* Green background color for active sort */
+    color: white;
+}
+
+.courses #courses {
+    padding: 20px; /* Adds padding around the courses section */
+    border: 1px solid #ccc; /* Adds a border around the courses section */
+    margin-top: 20px; /* Adds top margin to the courses section */
+}
+
+.courses section .flex-container {
+    display: flex; /* Uses flexbox layout for flex container */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: space-around; /* Distributes space around items */
+    text-align: left; /* Aligns text to the left */
+}
+
+.courses section .flex-item img {
+    width: 100%; /* Sets the image width to 100% */
+    height: 150px; /* Sets the image height */
+    object-fit: cover; /* Ensures the image covers the area */
+}
+
+.courses .course-card {
+    position: relative; /* Sets position to relative */
+    width: 20%; /* Sets the width of course cards */
+    height: 220px; /* Sets the height of course cards */
+    margin: 10px; /* Adds margin around course cards */
+    perspective: 1000px; /* Adds perspective for 3D effect */
+}
+
+.courses .course-card .flex-item {
+    position: absolute; /* Sets position to absolute */
+    width: 100%; /* Sets the width to 100% */
+    height: 100%; /* Sets the height to 100% */
+    backface-visibility: hidden; /* Hides the back face of the element */
+    border: 1px solid #ccc; /* Adds a border around flex items */
+    border-radius: 5px; /* Rounds the corners of flex items */
+    text-align: center; /* Centers the text */
+    transition: transform 0.6s; /* Adds a transition effect */
+}
+
+.courses .course-card .front {
+    z-index: 2; /* Sets the stack order */
+    transform: rotateY(0deg); /* Sets the initial rotation */
+}
+
+.courses .course-card .back {
+    transform: rotateY(180deg); /* Sets the initial rotation */
+}
+
+.courses .course-card:hover .front {
+    transform: rotateY(-180deg); /* Rotates the front on hover */
+}
+
+.courses .course-card:hover .back {
+    transform: rotateY(0deg); /* Rotates the back on hover */
+}
+
+@media (max-width: 1200px) {
+    .courses .course-card {
+        width: 30%; /* Changes the width of course cards */
+    }
+}
+
+@media (max-width: 992px) {
+    .courses .course-card {
+        width: 45%; /* Changes the width of course cards */
+    }
+}
+
+@media (max-width: 768px) {
+    .courses .course-card {
+        width: 100%; /* Changes the width of course cards */
+    }
+}
